@@ -1,0 +1,44 @@
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+secrets/
+
+# Python
+# Environnement du projet (ignore aussi Lib/ et son contenu)
+gesture-engine/.venv/
+**/.venv/
+**/venv/
+**/__pycache__/
+*.py[cod]
+*.pyd
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/.cache/
+
+# Godot et builds .NET
+godot/.godot/
+**/bin/
+**/obj/
+**/dist/
+**/build/
+
+# Node.js
+**/node_modules/
+
+# Journaux et fichiers temporaires
+*.log
+*.tmp
+*.bak
+
+# Fichiers locaux d'éditeur
+.vscode/
+.idea/
+*.user
+*.suo

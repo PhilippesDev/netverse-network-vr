@@ -1,0 +1,38 @@
+# NETVERSE VR — Gesture Core
+# Environnement Python 3.11.6 + MediaPipe 1.2.3 (API Tasks)
+#
+# Mise en place :
+#   py -3.11 -m venv .venv
+#   .\.venv\Scripts\python.exe -m pip install --no-cache-dir -r requirements.txt
+#
+# Vérification :
+#   .\.venv\Scripts\python.exe check_env.py
+#
+# IMPORTANT — MediaPipe 1.x :
+#   L'API historique `mp.solutions.hands` N'EXISTE PLUS. Seule l'API Tasks
+#   (`mediapipe.tasks.python.vision.HandLandmarker`) est disponible, et elle
+#   exige le modèle `models/hand_landmarker.task` (non embarqué dans le paquet).
+#   Source du modèle : Google, bucket officiel mediapipe-models
+#     https://storage.googleapis.com/mediapipe-models/hand_landmarker/hand_landmarker/float16/1/hand_landmarker.task
+#   Taille : 7 819 105 octets
+#   SHA-256 : fbc2a30080c3c557093b5ddfc334698132eb341044ccee322ccf8bcf3607cde1
+
+absl-py==2.5.1
+certifi==2026.10.23
+cffi==2.1.1
+contourpy==1.3.3
+cycler==0.12.1
+flatbuffers==25.12.19
+fonttools==4.68.0
+kiwisolver==1.5.1
+matplotlib==3.11.2
+mediapipe==1.2.3
+numpy==2.4.6
+opencv-contrib-python==5.0.0.93
+packaging==26.3
+pillow==13.0.0
+pycparser==3.12
+pyparsing==3.3.3
+python-dateutil==4.0.0
+sounddevice==0.5.6
+tzdata==2026.6
